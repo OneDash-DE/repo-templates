@@ -2,6 +2,7 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 const selectedPreprocessor = {
 	fileRegexp: /\.(sass|scss|css)$/,
@@ -85,6 +86,9 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new ESLintPlugin({
+			failOnError: true,
+		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
 			filename: "style.[contenthash].css",

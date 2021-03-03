@@ -6,8 +6,8 @@
 	"scripts": {
 		"start": "webpack serve --hot --config webpack.dev.js",
 		"build": "webpack --config webpack.prod.js",
-		"lint": "tsc --noEmit && eslint ./**/*.ts --fix",
-		"format": "npx prettier --write src/**/*.ts"
+		"lint": "npx eslint \"src/**/*.{html,mjs,jsx,js,ts,tsx}\" --quiet --fix",
+		"format": "npx prettier --write \"src/**/*.{html,scss,css,mjs,jsx,js,ts,tsx}\""
 	},
 	"author": "",
 	"license": "ISC",
@@ -21,7 +21,9 @@
 		"css-loader": "^5.1.1",
 		"eslint": "^7.21.0",
 		"eslint-config-prettier": "^8.1.0",
+		"eslint-plugin-html": "^6.1.1",
 		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-webpack-plugin": "^2.5.2",
 		"file-loader": "^6.2.0",
 		"html-loader": "^2.1.1",
 		"html-webpack-plugin": "^5.2.0",
