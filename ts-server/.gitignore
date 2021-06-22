@@ -1,0 +1,11 @@
+node_modules
+.VSCodeCounter
+docs
+files/
+.build
+yarn.lock
+bundle.js
+pnpm-debug.log
+coverage/
+.scannerwork
+dist

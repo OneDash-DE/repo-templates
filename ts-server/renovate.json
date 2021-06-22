@@ -1,0 +1,16 @@
+{
+	"extends": ["config:base"],
+	"labels": ["automerge", "dependencies"],
+	"automerge": true,
+	"schedule": "before 3am on Monday",
+	"semanticCommits": true,
+	"packageRules": [
+		{
+			"packagePatterns": ["*"],
+			"minor": {
+				"groupName": "all non-major dependencies",
+				"groupSlug": "all-minor-patch"
+			}
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"jsc": {
+		"target": "es5",
+		"parser": {
+			"syntax": "typescript",
+			"tsx": false,
+			"decorators": false,
+			"dynamicImport": false
+		}
+	},
+	"module": {
+		"type": "commonjs",
+		"strict": false,
+		"strictMode": true,
+		"lazy": false,
+		"noInterop": false
+	},
+	"sourceMaps": "inline"
+}
